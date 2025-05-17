@@ -139,8 +139,8 @@ function lidarComEntradaDoUsuario(mensagem) {
         resposta = "E quem disse que isso é problema meu?! 😒";
     } else if (mensagem.match(/(pode.*fazer|me.*diga|que.*faço)/)) {
         resposta = "Não! 👍";
-    } else if (mensagem.match(/(que.*faz|)/)) {
-        resposta = "Converso e jogo pedra papel e tesoura(digite: jogar pedra papel e tesoura para jogar)";
+    } else if (mensagem.match(/(que.*faz)/)) {
+        resposta = "Converso e jogo pedra papel e tesoura (digite: jogar pedra papel e tesoura para jogar)";
     } else if (mensagem.includes("sim") || mensagem.includes("ajude") || mensagem.includes("conte")) {
         resposta = "Não quero";
     } else if (mensagem.includes("ok")) {
@@ -153,7 +153,7 @@ function lidarComEntradaDoUsuario(mensagem) {
         resposta = "Dev Fuques, ta escrito no fim da página!";
     } else if (mensagem.includes("estamos") && mensagem.includes("mesmo") && mensagem.includes("barco")) {
         resposta = "Eu não, só você";
-    } else if (mensagem.match(/(objetivo|motivo).*vida/)) {
+    } else if (mensagem.match(/(objetivo|motivo.*vida|sentido.*vida)/i)) {
         resposta = "Sei lá, sou só um ChatBot";
     } else if (mensagem.match(/(como.*posso.*rico|erriquecer|ganhar.*dinheiro)/)) {
         resposta = "Simples, trabalhe";
@@ -171,9 +171,11 @@ function lidarComEntradaDoUsuario(mensagem) {
         resposta = `Ta escrito na sua barra de ferramentas, hoje é ${hoje.toLocaleDateString('pt-BR', opcoes)}.`;
     } else if (mensagem.match(/(que.*hora.*(são|sao))/)) {
         const agora = new Date();
-        resposta = ` Ta escrito na sua barra de ferramentas, agora são ${agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}.`;
-    } else if (mensagem.match(/(você).*dabe/)) {
+        resposta = `Ta escrito na sua barra de ferramentas, agora são ${agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}.`;
+    } else if (mensagem.match(/(você).*sabe/)) {
         resposta = "Fui programado para falar frases Desmotivacionais com a intenção de brincadeira. Meu criador queria testar seus conhecimentos.";
+    } else {
+        resposta = "Você fala sério mesmo ou só está brincando? 😒"; // Resposta padrão para mensagens não reconhecidas
     }
 
     // Jogo de Pedra, Papel e Tesoura
