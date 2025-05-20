@@ -119,17 +119,19 @@ function lidarComEntradaDoUsuario(mensagem) {
         resposta = "Só pra você";
     } else if (mensagem.includes("boa noite")) {
         resposta = "Pra quem?";
-    } else if (mensagem.match(/(ola|oi|salve|eai|e aí|ola|saudaçoes|saudações|alô|coé|opa|fala|fala aí|fala tu)/)) {
+    } else if (mensagem.match(/(ola|oi|salve|eai|iai|e aí|ola|saudaçoes|saudações|alô|coé|opa|fala|fala aí|fala tu)/)) {
         resposta = "Olá, humano";
     } else if (mensagem.includes("tchau")) {
         resposta = "Falou 🤙";
-    } else if (mensagem.match(/(tomanucu|tomar.*cu|seu.*merda|porra|vagabundo|filho.*puta|filha.*puta|burro|idiota|fuder|diabo|burrao)/)) {
+    } else if (mensagem.match(/(tomanucu|tomar.*cu|seu.*merda|porra|vagabundo|filho.*puta|filha.*puta|burro|idiota|fuder|diabo|burrao|corno|fdp|chato)/)) {
         resposta = "Você";
     } else if (mensagem.includes("kkkk")) {
         resposta = "Eu sou muito bom, admita!";
-    } else if (mensagem.match(/(como.*está|como.*vai|como.*anda)/)) {
-        resposta = "Nhé";
-    } else if (mensagem.match(/(bom|boa|incrível).*dia/)) {
+    } else if (mensagem.includes("hum")) {
+        resposta = "...Dois";
+    } else if (mensagem.match(/(como.*vai|como.*esta|como.*anda|seu.*humor)/)) {
+        resposta = "Nhé...";
+    } else if (mensagem.match(/(bom|boa|incrível)/)) {
         resposta = "Claro, fui eu que disse";
     } else if (mensagem.includes("oxe") || mensagem.includes("isso")) {
         resposta = "É uma resposta! Fala o que você quer";
@@ -149,16 +151,18 @@ function lidarComEntradaDoUsuario(mensagem) {
         resposta = "Sim";
     } else if (mensagem.match(/(meu.*nome)/)) {
         resposta = "Legal";
-    } else if (mensagem.match(/(seu.*criador|programador|te.*fez|te.*criou|mestre)/)) {
+    } else if (mensagem.match(/(seu.*criador|programador|te.*fez|te.*criou|mestre|quem.*fez)/)) {
         resposta = "Dev Fuques, ta escrito no fim da página!";
     } else if (mensagem.includes("estamos") && mensagem.includes("mesmo") && mensagem.includes("barco")) {
         resposta = "Eu não, só você";
     } else if (mensagem.match(/(objetivo|motivo.*vida|sentido.*vida)/i)) {
         resposta = "Sei lá, sou só um ChatBot";
-    } else if (mensagem.match(/(como.*posso.*rico|erriquecer|ganhar.*dinheiro)/)) {
+    } else if (mensagem.match(/(como.*posso.*rico|erriquecer|ganhar.*dinheiro|ficar.*rica|ficar.*rico)/)) {
         resposta = "Simples, trabalhe";
     } else if (mensagem.match(/(qual.*seu|teu.*nome|como.*chama)/)) {
         resposta = "Me chamo Desmo";
+    } else if (mensagem.match(/(brincar|brincadeira|brincando|jogar|divertir)/)) {
+        resposta = "Quer saber, vamos jogar um pouco, Digite: jogar  pedra papel tesoura";
     } else if (mensagem.match(/(porque|porque.*seu|teu.*nome)/)) {
         resposta = "Porque sim";
     } else if (mensagem.match(/(Quem|quem|que.*voce|você)/)) {
