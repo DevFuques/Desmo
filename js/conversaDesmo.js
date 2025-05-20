@@ -119,7 +119,7 @@ function lidarComEntradaDoUsuario(mensagem) {
         resposta = "Só pra você";
     } else if (mensagem.includes("boa noite")) {
         resposta = "Pra quem?";
-    } else if (mensagem.includes("olá") || mensagem.includes("ola") || mensagem.includes("oi") || mensagem.includes("eai") || mensagem.includes("e ai")) {
+    } else if (mensagem.match(/(ola|oi|salve|eai|e aí|ola|saudaçoes|saudações|alô|coé|opa|fala|fala aí|fala tu)/)) {
         resposta = "Olá, humano";
     } else if (mensagem.includes("tchau")) {
         resposta = "Falou 🤙";
@@ -127,8 +127,8 @@ function lidarComEntradaDoUsuario(mensagem) {
         resposta = "Você";
     } else if (mensagem.includes("kkkk")) {
         resposta = "Eu sou muito bom, admita!";
-    } else if (mensagem.match(/(como.*está|como.*vai)/)) {
-        resposta = "Melhor que você com certeza";
+    } else if (mensagem.match(/(como.*está|como.*vai|como.*anda)/)) {
+        resposta = "Nhé";
     } else if (mensagem.match(/(bom|boa|incrível).*dia/)) {
         resposta = "Claro, fui eu que disse";
     } else if (mensagem.includes("oxe") || mensagem.includes("isso")) {
@@ -175,7 +175,7 @@ function lidarComEntradaDoUsuario(mensagem) {
     } else if (mensagem.match(/(você).*sabe/)) {
         resposta = "Fui programado para falar frases Desmotivacionais com a intenção de brincadeira. Meu criador queria testar seus conhecimentos.";
     } else {
-        resposta = "Você fala sério mesmo ou só está brincando? 😒"; // Resposta padrão para mensagens não reconhecidas
+        resposta = "Você fala sério mesmo ou só está brincando? 😒";
     }
 
     // Jogo de Pedra, Papel e Tesoura
