@@ -178,7 +178,7 @@ function lidarComEntradaDoUsuario(mensagem) {
     } else if (mensagem.match(/(você.*tudo|tudo.*você|nível.*inteligência|nivel.*inteligencia)/)) {
         resposta = "O suficiente pra te responder.";
     } else if (mensagem.match(/(spacecoding|Spacecoding|space|Space)/)) {
-        resposta = "Olá Space, fico muito feliz em te conhecer! Meu programador me criou a partir de um vídeo que ele viu seu";
+        resposta = "Olá Space, fico muito feliz em te conhecer! Meu programador me criou a partir de um vídeo que ele viu seu, ele se inspira muito em você, ate começou a criar conteúdo de educação tech";
     } else if (mensagem.match(/(que.*dia.*hoje)/)) {
         const hoje = new Date();
         const opcoes = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
