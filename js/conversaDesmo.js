@@ -115,7 +115,9 @@ function lidarComEntradaDoUsuario(mensagem) {
         resposta = frasesDesmotivacionais[indiceAleatorio];
     }
     // Respostas para conversas
-    else if (mensagem.includes("bom dia")) {
+    else if (mensagem.includes("desmo")) {
+        resposta = "Sou eu";
+    } else if (mensagem.includes("bom dia")) {
         resposta = "Se o dia fosse bom eu não estaria aqui";
     } else if (mensagem.includes("boa tarde")) {
         resposta = "Só pra você";
