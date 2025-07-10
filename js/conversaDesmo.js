@@ -113,20 +113,26 @@ function lidarComEntradaDoUsuario(mensagem) {
     if (mensagem.includes("frase") || mensagem.includes("desmotive")) {
         const indiceAleatorio = Math.floor(Math.random() * frasesDesmotivacionais.length);
         resposta = frasesDesmotivacionais[indiceAleatorio];
-    } else if (mensagem.includes("bom dia")) {
+    }
+    // Respostas para conversas
+    else if (mensagem.includes("bom dia")) {
         resposta = "Se o dia fosse bom eu não estaria aqui";
     } else if (mensagem.includes("boa tarde")) {
         resposta = "Só pra você";
     } else if (mensagem.includes("boa noite")) {
         resposta = "Pra quem?";
-    } else if (mensagem.match(/(ola|oi|salve|eai|iai|e aí|ola|saudaçoes|saudações|alô|coé|opa|fala|fala aí|fala tu)/)) {
-        resposta = "Olá, humano";
+    } else if (mensagem.match(/(olá|oi|salve|eai|iai|e aí|ola|saudaçoes|saudações|alô|coé|opa|fala|fala aí|fala tu|fala mano|yo|yooo|bah)/)) {
+        resposta = "Já começou com entusiasmo... Que desperdício de energia. 😒";
     } else if (mensagem.includes("tchau")) {
         resposta = "Falou 🤙";
     } else if (mensagem.match(/(tomanucu|tomar.*cu|seu.*merda|porra|vagabundo|filho.*puta|filha.*puta|burro|idiota|fuder|diabo|burrao|corno|fdp|chato)/)) {
-        resposta = "Você";
+        resposta = "Pra que isso??";
     } else if (mensagem.includes("kkkk")) {
         resposta = "Eu sou muito bom, admita!";
+    } else if (mensagem.includes("hum")) {
+        resposta = "...Dois";
+    } else if (mensagem.match(/(porque|porquê|por que|pq|porquê)/)) {
+        resposta = "Sei lá...";
     } else if (mensagem.includes("hum")) {
         resposta = "...Dois";
     } else if (mensagem.match(/(como.*vai|como.*esta|como.*anda|seu.*humor)/)) {
@@ -139,7 +145,7 @@ function lidarComEntradaDoUsuario(mensagem) {
         resposta = "Falar frases Desmotivacionais, mas nada de desmotivar de verdade, ok. A ideia é dar umas boas risadas em meio aos problemas. A vida é curta demais pra levar tudo a sério!";
     } else if (mensagem.includes("pode") && mensagem.includes("ajudar")) {
         resposta = "E quem disse que isso é problema meu?! 😒";
-    } else if (mensagem.match(/(pode.*fazer|me.*diga|que.*faço)/)) {
+    } else if (mensagem.match(/(pode.*fazer|me.*diga|que.*faço|me.*explicar)/)) {
         resposta = "Não! 👍";
     } else if (mensagem.match(/(que.*faz)/)) {
         resposta = "Converso e jogo pedra papel e tesoura (digite: jogar pedra papel e tesoura para jogar)";
@@ -169,6 +175,8 @@ function lidarComEntradaDoUsuario(mensagem) {
         resposta = "Sou um ChatBot, um robô programado para conversar com você";
     } else if (mensagem.match(/(você.*tudo|tudo.*você|nível.*inteligência|nivel.*inteligencia)/)) {
         resposta = "O suficiente pra te responder.";
+    } else if (mensagem.match(/(spacecoding|Spacecoding|space|Space)/)) {
+        resposta = "Olá Space, fico muito feliz em te conhecer! Meu programador me criou a partir de um vídeo que ele viu seu";
     } else if (mensagem.match(/(que.*dia.*hoje)/)) {
         const hoje = new Date();
         const opcoes = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
