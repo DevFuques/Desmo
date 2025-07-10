@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./img/Desmo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styleDesmo.css" />
+    <title>Desmo</title>
+</head>
+
+<body class="light-mode flex flex-col h-screen">
+
+    <!-- Cabeçalho com logo e botão de modo -->
+    <header class="flex items-center justify-between p-4 bg-transparent z-10">
+        <div class="flex items-center gap-3">
+            <img src="./img/Desmo.png" alt="Desmo Logo" class="w-10 h-10" />
+            <h1 class="text-2xl font-semibold tracking-wide text-blue-500 select-none">Desmo</h1>
+        </div>
+        <button id="toggle-theme"
+            class="text-lg bg-gray-300 dark:bg-gray-700 text-black dark:text-white px-4 py-2 rounded hover:bg-gray-400 dark:hover:bg-gray-600 transition">
+            🌙 Escuro
+        </button>
+    </header>
+
+    <!-- Informações comandos -->
+    <div class="commands-info">
+        Comandos Chave: "frase" para uma frase | jogar pedra papel tesoura | Só converse e descubra.
+    </div>
+
+    <!-- Container do chat -->
+    <main class="chat-container flex flex-col px-4"></main>
+
+    <!-- Área de entrada -->
+    <div class="input-area px-4">
+        <input type="text" id="message-input" class="text-input" placeholder="Digite sua mensagem..."
+            autocomplete="off" />
+        <button id="send-button" class="send-button">Enviar</button>
+    </div>
+
+    <!-- Aviso -->
+    <p class="text-center text-sm text-gray-500 my-2">
+        *IMPORTANTE: O objetivo deste chat é puramente PIADA!*
+    </p>
+
+    <footer>
+        <p>Desenvolvido por Dev Fuques &copy;2025 Instagram: <a
+                href="https://www.instagram.com/devfuques?igsh=cjF0eTZvMXU4eDA2" target=”_blank”
+                rel=”noopener”>@devfuques</a>
+        </p>
+    </footer>
+
+
+    <script src="./js/conversaDesmo.js"></script>
+</body>
+
+</html>
