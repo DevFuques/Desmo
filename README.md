@@ -6,6 +6,8 @@
 
 Ele responde de maneira irônica, descomplicada e, às vezes, até um pouco sem paciência. A ideia é não perder tempo com otimismo vazio, e sim com o realismo (ou falta dele) da vida.
 
+Chatbot Online: https://devfuques.github.io/Desmo/
+
 ## ℹ️ O que é o Desmo?
 
 Desmo é uma brincadeira de chatbot que vive para te lembrar que a vida é, na maioria das vezes, imprevisível, caótica e, em muitos casos, frustrante. Em vez de lhe dar respostas doces ou otimistas, Desmo prefere uma visão mais irreverente da vida, como se estivesse sempre de mau humor ou simplesmente cansado de tudo.
