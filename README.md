@@ -39,7 +39,7 @@ Aqui estão alguns exemplos de como o Desmo se comporta:
 
 Se você também acha que a vida não tem muito sentido e quer adicionar mais frases desmotivacionais ou recursos ao Desmo, sinta-se à vontade para abrir um *pull request*.
 
-## 📄 Licença
+## ⚖️ Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
