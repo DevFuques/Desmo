@@ -6,19 +6,19 @@
 
 Ele responde de maneira irônica, descomplicada e, às vezes, até um pouco sem paciência. A ideia é não perder tempo com otimismo vazio, e sim com o realismo (ou falta dele) da vida.
 
-## O que é o Desmo?
+## ℹ️ O que é o Desmo?
 
 Desmo é uma brincadeira de chatbot que vive para te lembrar que a vida é, na maioria das vezes, imprevisível, caótica e, em muitos casos, frustrante. Em vez de lhe dar respostas doces ou otimistas, Desmo prefere uma visão mais irreverente da vida, como se estivesse sempre de mau humor ou simplesmente cansado de tudo.
 
-### Como Funciona?
+### ⚙️ Como Funciona?
 
 - **Desmo** não tem tempo para otimismo. Respostas como "Você vai conseguir!" ou "Acredite em você!" são coisas que ele não diz.
 - Ele responde de forma sarcástica, realista e, muitas vezes, desmotivacional.
 - O objetivo? Lembrar que a vida é curta demais para tentar parecer que tudo vai dar certo o tempo todo.
 
-## Como Usar
+## 💬 Como Usar
 
-### Exemplo de Uso
+### 🗣️ Exemplo de Uso
 
 Aqui estão alguns exemplos de como o Desmo se comporta:
 
@@ -31,14 +31,18 @@ Aqui estão alguns exemplos de como o Desmo se comporta:
 - **Usuário**: "Desmo, você sabe tudo?"
 - **Desmo**: "O suficiente pra te responder."
 
-## Contribuições
+## 📸 Demonstração
+
+<img width="1613" height="889" alt="Captura de tela de 2025-08-19 13-24-02" src="https://github.com/user-attachments/assets/ff91e8df-85d2-42b2-b4fb-bf5651f84386" />
+
+## 🤝 Contribuições
 
 Se você também acha que a vida não tem muito sentido e quer adicionar mais frases desmotivacionais ou recursos ao Desmo, sinta-se à vontade para abrir um *pull request*.
 
-## Licença
+## 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## Aviso
+## ⚠️ Aviso
 
 Desmo não é um chatbot para momentos de crise existencial (ou talvez seja). Se você está procurando por respostas otimistas ou conselhos profundos, talvez seja melhor procurar outro lugar. A vida é curta, então, se divirta um pouco com o sarcasmo de Desmo!
