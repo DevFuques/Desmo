@@ -2,9 +2,9 @@
 
 ![Desmo](https://github.com/user-attachments/assets/c40f4c6b-9042-4299-a8f7-1036e737a7e1)
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)
+[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
+[![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
 
 **Desmo** é um chatbot criado para lembrar você de que "a vida é curta demais para levar tudo a sério". Se você está cansado de conversas motivacionais e quer um pouco de sarcasmo e desmotivação com uma pitada de humor ácido, Desmo é o seu novo melhor amigo.
 
